@@ -1,0 +1,135 @@
+@use "sass:color";
+@use "../styles/variables" as *;
+
+$ink: #1a1a1a;
+$ink-weak: #444;
+$muted: #f5f5f5;
+$accent: #d4af37;
+
+.yfg-hero {
+  position: relative;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: clamp(360px, 72vh, 560px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(112px, 12vw, 168px) 0 clamp(48px, 8vw, 96px);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.yfg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.9rem 2.75rem;
+  font-family: $font-heading;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.yfg-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.yfg-btn--primary {
+  background: $accent;
+  color: $ink;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.yfg-btn--primary:hover,
+.yfg-btn--primary:focus-visible {
+  background: color.adjust($accent, $lightness: -5%);
+  color: $ink;
+  transform: translateY(-2px);
+  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.28);
+}
+
+.yfg-container {
+  width: min(var(--layout-max-width), 100%);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.yfg-video-section {
+  margin-top: clamp(32px, 4vw, 72px);
+  padding: clamp(32px, 6vw, 64px) 0;
+}
+
+.yfg-video-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 35px 65px rgba(0, 0, 0, 0.18);
+  padding: clamp(8px, 2vw, 18px);
+}
+
+.yfg-video-card__media {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.yfg-section {
+  padding: clamp(40px, 6vw, 72px) 0;
+  background: #fffdf8;
+}
+
+.yfg-h2 {
+  font-family: $font-heading;
+  font-weight: 700;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.yfg-lead {
+  max-width: 60ch;
+  color: $ink-weak;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.yfg-scripture {
+  margin: clamp(24px, 4vw, 40px) auto 0;
+  max-width: 48rem;
+  padding: clamp(24px, 4vw, 40px);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  blockquote {
+    margin: 0 0 0.75rem;
+    font-family: $font-heading;
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $ink-weak;
+  }
+}

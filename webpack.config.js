@@ -1,0 +1,54 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+module.exports = {
+  entry: path.resolve(__dirname, "src/index.tsx"),
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[contenthash].js",
+    assetModuleFilename: "assets/[hash][ext][query]",
+    clean: true,
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.s?css$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(mp4|webm|ogg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff2?|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "public/index.html"),
+      favicon: false,
+    }),
+  ],
+  devServer: {
+    static: path.resolve(__dirname, "dist"),
+    historyApiFallback: true,
+    hot: true,
+    port: 3000,
+    open: true,
+  },
+  devtool: "source-map",
+};
