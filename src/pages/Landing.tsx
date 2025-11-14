@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import hero from "../assets/emptyBackground.png";
+import hero from "../assets/solus-christus-bg.png";
 import promoVideo from "../assets/yfg_promo_placeholder.mp4";
 import "./Landing.scss";
 
