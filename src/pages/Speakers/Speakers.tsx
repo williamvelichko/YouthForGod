@@ -1,49 +1,28 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import benImage from "../../assets/benCropped.webp";
+import neymanImage from "../../assets/neyman.webp";
+import romanImage from "../../assets/roman.webp";
 import "./Speakers.scss";
 
 const speakers = [
   {
-    name: "Dr. Naomi Sanchez",
-    title: "Founding Pastor",
-    organization: "Revival House",
-    image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    name: "Ben Balzhyk",
+    title: "Pastor",
+    organization: "Independent Baptist Church",
+    image: benImage,
   },
   {
-    name: "Micah Landon",
-    title: "NextGen Pastor",
-    organization: "Grace City Church",
-    image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80",
+    name: "Konstantin Neyman",
+    title: "Pastor",
+    organization: "Hazel Dell Baptist Church",
+    image: neymanImage,
   },
   {
-    name: "Evangeline Porter",
-    title: "Founder",
-    organization: "The Flourish Collective",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    name: "Pastor Harold Kim",
-    title: "Teaching Pastor",
-    organization: "Imago Dei Church",
-    image:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    name: "Kara Reed",
-    title: "Leadership Coach",
-    organization: "Elevate Ministries",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    name: "Dr. Theo Williams",
-    title: "Professor of Theology",
-    organization: "Veritas Seminary",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    name: "Roman Balatski",
+    title: "Youth Pastor",
+    organization: "Bible Baptist Church",
+    image: romanImage,
   },
 ];
 

@@ -26,8 +26,9 @@ test.describe('Youth for God pages', () => {
   test('speakers page lists featured speakers', async ({ page }) => {
     await page.goto(routes.speakers);
     await expect(page.getByRole('heading', { name: /Speakers & Guides/i })).toBeVisible();
-    await expect(page.getByText(/Naomi Sanchez/i)).toBeVisible();
-    await expect(page.getByText(/Micah Landon/i)).toBeVisible();
+    await expect(page.getByText(/Ben Balzhyk/i)).toBeVisible();
+    await expect(page.getByText(/Konstantin Neyman/i)).toBeVisible();
+    await expect(page.getByText(/Roman Balatski/i)).toBeVisible();
   });
 
   test('FAQ page shows common questions', async ({ page }) => {
