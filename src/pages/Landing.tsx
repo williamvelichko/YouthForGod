@@ -10,6 +10,9 @@ import "./Landing.scss";
 
 export function Landing() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  // Simple black poster to avoid showing a white flash before playback
+  const blackPoster =
+    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' style='background:black'/%3E";
 
   return (
     <>
@@ -58,7 +61,7 @@ export function Landing() {
               <video
                 className="yfg-video-card__media"
                 controls
-                //poster={hero}
+                poster={blackPoster}
                 aria-label="Youth for God promo video"
                 onPlay={() => setIsVideoPlaying(true)}
               >
