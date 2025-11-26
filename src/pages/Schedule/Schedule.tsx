@@ -18,7 +18,7 @@ const conferenceSchedule = {
     label: "Saturday",
     date: "May 23",
     slots: [
-      { time: "7:30 AM", activity: "Registration" },
+      // { time: "7:30 AM", activity: "Registration" },
       { time: "10:00 AM", activity: "Session 1" },
       { time: "1:00 PM", activity: "Lunch" },
       { time: "5:00 PM", activity: "Youth Park/Fellowship" },

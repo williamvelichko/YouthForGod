@@ -19,7 +19,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
   {
     question: "What are the dates for Y4G conference?",
     answer:
-      "Mark your calendars! The conference kicks off on Friday, May 22 and wraps up on Sunday, May 23. We recommend checking the website regularly for any schedule updates and plan to arrive early so you can check in smoothly and grab a great seat!",
+      "Mark your calendars! The conference kicks off on Friday, May 22 and wraps up on Saturday, May 23. We recommend checking the website regularly for any schedule updates and plan to arrive early so you can check in smoothly and grab a great seat!",
   },
   {
     question: "Who can attend the conference?",

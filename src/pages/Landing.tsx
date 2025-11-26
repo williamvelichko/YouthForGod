@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import hero from "../assets/backgroundImage2.png";
-import promoVideo from "../assets/Conferencepromo2.webm";
+import promoVideoWebm from "../assets/Conferencepromo2.webm";
+import promoVideoMp4 from "../assets/Conferencepromo2.mp4";
 import updatedLogo2 from "../assets/updatedLogo2.png";
 import "./Landing.scss";
 
@@ -61,7 +62,8 @@ export function Landing() {
                 aria-label="Youth for God promo video"
                 onPlay={() => setIsVideoPlaying(true)}
               >
-                <source src={promoVideo} type="video/webm" />
+                <source src={promoVideoMp4} type="video/mp4" />
+                <source src={promoVideoWebm} type="video/webm" />
                 Your browser does not support the video tag.
               </video>
             </div>
