@@ -48,6 +48,25 @@ export function RegistrationPage() {
 
         <section className="registration__form">
           <div className="container">
+            <div className="registration__pricing">
+              <p className="registration__pricing-title">Registration Cost</p>
+              <div className="registration__pricing-items">
+                <p className="registration__pricing-item">
+                  <span className="registration__pricing-dot" aria-hidden="true" />
+                  <span className="registration__pricing-label">
+                    Early Bird (until January 1)
+                  </span>
+                  <strong>$40</strong>
+                </p>
+                <p className="registration__pricing-item">
+                  <span className="registration__pricing-dot" aria-hidden="true" />
+                  <span className="registration__pricing-label">
+                    Regular (until March 31)
+                  </span>
+                  <strong>$60</strong>
+                </p>
+              </div>
+            </div>
             <div className="registration__frame-wrapper">
               <iframe
                 title="Youth for God Conference Registration"

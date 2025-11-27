@@ -19,6 +19,8 @@ const contactDetails = [
 ];
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="container footer__grid">
@@ -62,7 +64,7 @@ export function Footer() {
 
       <div className="footer__bottom">
         <p className="footer__copy">
-          © 2025 Youth for God Conference. All rights reserved.
+          © {currentYear} Youth for God Conference. All rights reserved.
         </p>
       </div>
     </footer>
