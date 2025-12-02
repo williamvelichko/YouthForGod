@@ -8,6 +8,7 @@ const conferenceSchedule = {
     date: "May 22",
     slots: [
       { time: "7:30 AM", activity: "Registration" },
+      { time: "8:00 AM", activity: "Coffee Cart Open" },
       { time: "10:00 AM", activity: "Session 1" },
       { time: "1:00 PM", activity: "Lunch" },
       { time: "3:00 PM", activity: "Session 2" },
@@ -18,7 +19,7 @@ const conferenceSchedule = {
     label: "Saturday",
     date: "May 23",
     slots: [
-      // { time: "7:30 AM", activity: "Registration" },
+      { time: "8:00 AM", activity: "Coffee Cart Open" },
       { time: "10:00 AM", activity: "Session 1" },
       { time: "1:00 PM", activity: "Lunch" },
       { time: "5:00 PM", activity: "Youth Park/Fellowship" },
